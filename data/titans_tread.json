@@ -1,0 +1,4152 @@
+{
+  "title": "Titans Tread",
+  "artist": "Original track",
+  "difficulty": "Medium",
+  "bpm": 123,
+  "duration": 158.119,
+  "audioUrl": "assets/Titans_Tread.mp3",
+  "arrangement": "Original full-length practice groove; not a transcription.",
+  "notesComplete": true,
+  "notes": [
+    {
+      "time": 0.084,
+      "instrument": "kick"
+    },
+    {
+      "time": 0.084,
+      "instrument": "crash"
+    },
+    {
+      "time": 0.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 0.572,
+      "instrument": "snare"
+    },
+    {
+      "time": 0.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 1.06,
+      "instrument": "kick"
+    },
+    {
+      "time": 1.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 1.547,
+      "instrument": "snare"
+    },
+    {
+      "time": 1.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 2.035,
+      "instrument": "kick"
+    },
+    {
+      "time": 2.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 2.523,
+      "instrument": "snare"
+    },
+    {
+      "time": 2.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 3.011,
+      "instrument": "kick"
+    },
+    {
+      "time": 3.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 3.499,
+      "instrument": "snare"
+    },
+    {
+      "time": 3.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 3.986,
+      "instrument": "kick"
+    },
+    {
+      "time": 4.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 4.474,
+      "instrument": "snare"
+    },
+    {
+      "time": 4.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 4.962,
+      "instrument": "kick"
+    },
+    {
+      "time": 5.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 5.45,
+      "instrument": "snare"
+    },
+    {
+      "time": 5.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 5.938,
+      "instrument": "kick"
+    },
+    {
+      "time": 6.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 6.425,
+      "instrument": "snare"
+    },
+    {
+      "time": 6.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 6.913,
+      "instrument": "kick"
+    },
+    {
+      "time": 7.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 7.401,
+      "instrument": "snare"
+    },
+    {
+      "time": 7.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 7.889,
+      "instrument": "kick"
+    },
+    {
+      "time": 7.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 8.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 8.377,
+      "instrument": "snare"
+    },
+    {
+      "time": 8.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 8.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 8.864,
+      "instrument": "kick"
+    },
+    {
+      "time": 8.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 9.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 9.352,
+      "instrument": "snare"
+    },
+    {
+      "time": 9.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 9.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 9.84,
+      "instrument": "kick"
+    },
+    {
+      "time": 9.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 10.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 10.328,
+      "instrument": "snare"
+    },
+    {
+      "time": 10.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 10.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 10.816,
+      "instrument": "kick"
+    },
+    {
+      "time": 10.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 11.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 11.304,
+      "instrument": "snare"
+    },
+    {
+      "time": 11.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 11.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 11.547,
+      "instrument": "kick"
+    },
+    {
+      "time": 11.791,
+      "instrument": "kick"
+    },
+    {
+      "time": 11.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 12.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 12.279,
+      "instrument": "snare"
+    },
+    {
+      "time": 12.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 12.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 12.767,
+      "instrument": "kick"
+    },
+    {
+      "time": 12.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 13.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 13.255,
+      "instrument": "snare"
+    },
+    {
+      "time": 13.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 13.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 13.743,
+      "instrument": "kick"
+    },
+    {
+      "time": 13.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 13.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 14.23,
+      "instrument": "snare"
+    },
+    {
+      "time": 14.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 14.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 14.718,
+      "instrument": "kick"
+    },
+    {
+      "time": 14.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 14.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 14.962,
+      "instrument": "tom1"
+    },
+    {
+      "time": 15.206,
+      "instrument": "snare"
+    },
+    {
+      "time": 15.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 15.206,
+      "instrument": "tom2"
+    },
+    {
+      "time": 15.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 15.45,
+      "instrument": "kick"
+    },
+    {
+      "time": 15.45,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 15.694,
+      "instrument": "kick"
+    },
+    {
+      "time": 15.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 15.694,
+      "instrument": "crash"
+    },
+    {
+      "time": 15.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 16.182,
+      "instrument": "snare"
+    },
+    {
+      "time": 16.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 16.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 16.669,
+      "instrument": "kick"
+    },
+    {
+      "time": 16.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 16.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 17.157,
+      "instrument": "snare"
+    },
+    {
+      "time": 17.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 17.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 17.645,
+      "instrument": "kick"
+    },
+    {
+      "time": 17.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 17.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 18.133,
+      "instrument": "snare"
+    },
+    {
+      "time": 18.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 18.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 18.621,
+      "instrument": "kick"
+    },
+    {
+      "time": 18.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 18.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 19.108,
+      "instrument": "snare"
+    },
+    {
+      "time": 19.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 19.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 19.352,
+      "instrument": "kick"
+    },
+    {
+      "time": 19.596,
+      "instrument": "kick"
+    },
+    {
+      "time": 19.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 19.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 20.084,
+      "instrument": "snare"
+    },
+    {
+      "time": 20.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 20.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 20.572,
+      "instrument": "kick"
+    },
+    {
+      "time": 20.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 20.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 21.06,
+      "instrument": "snare"
+    },
+    {
+      "time": 21.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 21.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 21.547,
+      "instrument": "kick"
+    },
+    {
+      "time": 21.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 21.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 22.035,
+      "instrument": "snare"
+    },
+    {
+      "time": 22.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 22.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 22.523,
+      "instrument": "kick"
+    },
+    {
+      "time": 22.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 22.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 23.011,
+      "instrument": "snare"
+    },
+    {
+      "time": 23.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 23.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 23.255,
+      "instrument": "kick"
+    },
+    {
+      "time": 23.499,
+      "instrument": "kick"
+    },
+    {
+      "time": 23.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 23.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 23.986,
+      "instrument": "snare"
+    },
+    {
+      "time": 23.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 24.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 24.474,
+      "instrument": "kick"
+    },
+    {
+      "time": 24.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 24.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 24.962,
+      "instrument": "snare"
+    },
+    {
+      "time": 24.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 25.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 25.45,
+      "instrument": "kick"
+    },
+    {
+      "time": 25.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 25.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 25.938,
+      "instrument": "snare"
+    },
+    {
+      "time": 25.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 26.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 26.425,
+      "instrument": "kick"
+    },
+    {
+      "time": 26.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 26.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 26.913,
+      "instrument": "snare"
+    },
+    {
+      "time": 26.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 27.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 27.157,
+      "instrument": "kick"
+    },
+    {
+      "time": 27.401,
+      "instrument": "kick"
+    },
+    {
+      "time": 27.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 27.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 27.889,
+      "instrument": "snare"
+    },
+    {
+      "time": 27.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 28.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 28.377,
+      "instrument": "kick"
+    },
+    {
+      "time": 28.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 28.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 28.864,
+      "instrument": "snare"
+    },
+    {
+      "time": 28.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 29.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 29.352,
+      "instrument": "kick"
+    },
+    {
+      "time": 29.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 29.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 29.84,
+      "instrument": "snare"
+    },
+    {
+      "time": 29.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 30.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 30.328,
+      "instrument": "kick"
+    },
+    {
+      "time": 30.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 30.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 30.572,
+      "instrument": "tom1"
+    },
+    {
+      "time": 30.816,
+      "instrument": "snare"
+    },
+    {
+      "time": 30.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 30.816,
+      "instrument": "tom2"
+    },
+    {
+      "time": 31.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 31.06,
+      "instrument": "kick"
+    },
+    {
+      "time": 31.06,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 31.304,
+      "instrument": "kick"
+    },
+    {
+      "time": 31.304,
+      "instrument": "ride"
+    },
+    {
+      "time": 31.304,
+      "instrument": "crash"
+    },
+    {
+      "time": 31.547,
+      "instrument": "ride"
+    },
+    {
+      "time": 31.791,
+      "instrument": "snare"
+    },
+    {
+      "time": 31.791,
+      "instrument": "ride"
+    },
+    {
+      "time": 32.035,
+      "instrument": "ride"
+    },
+    {
+      "time": 32.279,
+      "instrument": "kick"
+    },
+    {
+      "time": 32.279,
+      "instrument": "ride"
+    },
+    {
+      "time": 32.523,
+      "instrument": "ride"
+    },
+    {
+      "time": 32.767,
+      "instrument": "snare"
+    },
+    {
+      "time": 32.767,
+      "instrument": "ride"
+    },
+    {
+      "time": 33.011,
+      "instrument": "ride"
+    },
+    {
+      "time": 33.255,
+      "instrument": "kick"
+    },
+    {
+      "time": 33.255,
+      "instrument": "ride"
+    },
+    {
+      "time": 33.499,
+      "instrument": "ride"
+    },
+    {
+      "time": 33.743,
+      "instrument": "snare"
+    },
+    {
+      "time": 33.743,
+      "instrument": "ride"
+    },
+    {
+      "time": 33.986,
+      "instrument": "ride"
+    },
+    {
+      "time": 34.23,
+      "instrument": "kick"
+    },
+    {
+      "time": 34.23,
+      "instrument": "ride"
+    },
+    {
+      "time": 34.474,
+      "instrument": "ride"
+    },
+    {
+      "time": 34.718,
+      "instrument": "snare"
+    },
+    {
+      "time": 34.718,
+      "instrument": "ride"
+    },
+    {
+      "time": 34.962,
+      "instrument": "ride"
+    },
+    {
+      "time": 34.962,
+      "instrument": "kick"
+    },
+    {
+      "time": 35.206,
+      "instrument": "kick"
+    },
+    {
+      "time": 35.206,
+      "instrument": "ride"
+    },
+    {
+      "time": 35.45,
+      "instrument": "ride"
+    },
+    {
+      "time": 35.694,
+      "instrument": "snare"
+    },
+    {
+      "time": 35.694,
+      "instrument": "ride"
+    },
+    {
+      "time": 35.938,
+      "instrument": "ride"
+    },
+    {
+      "time": 36.182,
+      "instrument": "kick"
+    },
+    {
+      "time": 36.182,
+      "instrument": "ride"
+    },
+    {
+      "time": 36.425,
+      "instrument": "ride"
+    },
+    {
+      "time": 36.669,
+      "instrument": "snare"
+    },
+    {
+      "time": 36.669,
+      "instrument": "ride"
+    },
+    {
+      "time": 36.913,
+      "instrument": "ride"
+    },
+    {
+      "time": 37.157,
+      "instrument": "kick"
+    },
+    {
+      "time": 37.157,
+      "instrument": "ride"
+    },
+    {
+      "time": 37.401,
+      "instrument": "ride"
+    },
+    {
+      "time": 37.645,
+      "instrument": "snare"
+    },
+    {
+      "time": 37.645,
+      "instrument": "ride"
+    },
+    {
+      "time": 37.889,
+      "instrument": "ride"
+    },
+    {
+      "time": 38.133,
+      "instrument": "kick"
+    },
+    {
+      "time": 38.133,
+      "instrument": "ride"
+    },
+    {
+      "time": 38.377,
+      "instrument": "ride"
+    },
+    {
+      "time": 38.621,
+      "instrument": "snare"
+    },
+    {
+      "time": 38.621,
+      "instrument": "ride"
+    },
+    {
+      "time": 38.864,
+      "instrument": "ride"
+    },
+    {
+      "time": 38.864,
+      "instrument": "kick"
+    },
+    {
+      "time": 39.108,
+      "instrument": "kick"
+    },
+    {
+      "time": 39.108,
+      "instrument": "ride"
+    },
+    {
+      "time": 39.352,
+      "instrument": "ride"
+    },
+    {
+      "time": 39.596,
+      "instrument": "snare"
+    },
+    {
+      "time": 39.596,
+      "instrument": "ride"
+    },
+    {
+      "time": 39.84,
+      "instrument": "ride"
+    },
+    {
+      "time": 40.084,
+      "instrument": "kick"
+    },
+    {
+      "time": 40.084,
+      "instrument": "ride"
+    },
+    {
+      "time": 40.328,
+      "instrument": "ride"
+    },
+    {
+      "time": 40.572,
+      "instrument": "snare"
+    },
+    {
+      "time": 40.572,
+      "instrument": "ride"
+    },
+    {
+      "time": 40.816,
+      "instrument": "ride"
+    },
+    {
+      "time": 41.06,
+      "instrument": "kick"
+    },
+    {
+      "time": 41.06,
+      "instrument": "ride"
+    },
+    {
+      "time": 41.304,
+      "instrument": "ride"
+    },
+    {
+      "time": 41.547,
+      "instrument": "snare"
+    },
+    {
+      "time": 41.547,
+      "instrument": "ride"
+    },
+    {
+      "time": 41.791,
+      "instrument": "ride"
+    },
+    {
+      "time": 42.035,
+      "instrument": "kick"
+    },
+    {
+      "time": 42.035,
+      "instrument": "ride"
+    },
+    {
+      "time": 42.279,
+      "instrument": "ride"
+    },
+    {
+      "time": 42.523,
+      "instrument": "snare"
+    },
+    {
+      "time": 42.523,
+      "instrument": "ride"
+    },
+    {
+      "time": 42.767,
+      "instrument": "ride"
+    },
+    {
+      "time": 42.767,
+      "instrument": "kick"
+    },
+    {
+      "time": 43.011,
+      "instrument": "kick"
+    },
+    {
+      "time": 43.011,
+      "instrument": "ride"
+    },
+    {
+      "time": 43.255,
+      "instrument": "ride"
+    },
+    {
+      "time": 43.499,
+      "instrument": "snare"
+    },
+    {
+      "time": 43.499,
+      "instrument": "ride"
+    },
+    {
+      "time": 43.743,
+      "instrument": "ride"
+    },
+    {
+      "time": 43.986,
+      "instrument": "kick"
+    },
+    {
+      "time": 43.986,
+      "instrument": "ride"
+    },
+    {
+      "time": 44.23,
+      "instrument": "ride"
+    },
+    {
+      "time": 44.474,
+      "instrument": "snare"
+    },
+    {
+      "time": 44.474,
+      "instrument": "ride"
+    },
+    {
+      "time": 44.718,
+      "instrument": "ride"
+    },
+    {
+      "time": 44.962,
+      "instrument": "kick"
+    },
+    {
+      "time": 44.962,
+      "instrument": "ride"
+    },
+    {
+      "time": 45.206,
+      "instrument": "ride"
+    },
+    {
+      "time": 45.45,
+      "instrument": "snare"
+    },
+    {
+      "time": 45.45,
+      "instrument": "ride"
+    },
+    {
+      "time": 45.694,
+      "instrument": "ride"
+    },
+    {
+      "time": 45.938,
+      "instrument": "kick"
+    },
+    {
+      "time": 45.938,
+      "instrument": "ride"
+    },
+    {
+      "time": 46.182,
+      "instrument": "ride"
+    },
+    {
+      "time": 46.182,
+      "instrument": "tom1"
+    },
+    {
+      "time": 46.425,
+      "instrument": "snare"
+    },
+    {
+      "time": 46.425,
+      "instrument": "ride"
+    },
+    {
+      "time": 46.425,
+      "instrument": "tom2"
+    },
+    {
+      "time": 46.669,
+      "instrument": "ride"
+    },
+    {
+      "time": 46.669,
+      "instrument": "kick"
+    },
+    {
+      "time": 46.669,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 46.913,
+      "instrument": "kick"
+    },
+    {
+      "time": 46.913,
+      "instrument": "ride"
+    },
+    {
+      "time": 46.913,
+      "instrument": "crash"
+    },
+    {
+      "time": 47.157,
+      "instrument": "ride"
+    },
+    {
+      "time": 47.401,
+      "instrument": "snare"
+    },
+    {
+      "time": 47.401,
+      "instrument": "ride"
+    },
+    {
+      "time": 47.645,
+      "instrument": "ride"
+    },
+    {
+      "time": 47.889,
+      "instrument": "kick"
+    },
+    {
+      "time": 47.889,
+      "instrument": "ride"
+    },
+    {
+      "time": 48.133,
+      "instrument": "ride"
+    },
+    {
+      "time": 48.377,
+      "instrument": "snare"
+    },
+    {
+      "time": 48.377,
+      "instrument": "ride"
+    },
+    {
+      "time": 48.621,
+      "instrument": "ride"
+    },
+    {
+      "time": 48.864,
+      "instrument": "kick"
+    },
+    {
+      "time": 48.864,
+      "instrument": "ride"
+    },
+    {
+      "time": 49.108,
+      "instrument": "ride"
+    },
+    {
+      "time": 49.352,
+      "instrument": "snare"
+    },
+    {
+      "time": 49.352,
+      "instrument": "ride"
+    },
+    {
+      "time": 49.596,
+      "instrument": "ride"
+    },
+    {
+      "time": 49.84,
+      "instrument": "kick"
+    },
+    {
+      "time": 49.84,
+      "instrument": "ride"
+    },
+    {
+      "time": 50.084,
+      "instrument": "ride"
+    },
+    {
+      "time": 50.328,
+      "instrument": "snare"
+    },
+    {
+      "time": 50.328,
+      "instrument": "ride"
+    },
+    {
+      "time": 50.572,
+      "instrument": "ride"
+    },
+    {
+      "time": 50.572,
+      "instrument": "kick"
+    },
+    {
+      "time": 50.816,
+      "instrument": "kick"
+    },
+    {
+      "time": 50.816,
+      "instrument": "ride"
+    },
+    {
+      "time": 51.06,
+      "instrument": "ride"
+    },
+    {
+      "time": 51.304,
+      "instrument": "snare"
+    },
+    {
+      "time": 51.304,
+      "instrument": "ride"
+    },
+    {
+      "time": 51.547,
+      "instrument": "ride"
+    },
+    {
+      "time": 51.791,
+      "instrument": "kick"
+    },
+    {
+      "time": 51.791,
+      "instrument": "ride"
+    },
+    {
+      "time": 52.035,
+      "instrument": "ride"
+    },
+    {
+      "time": 52.279,
+      "instrument": "snare"
+    },
+    {
+      "time": 52.279,
+      "instrument": "ride"
+    },
+    {
+      "time": 52.523,
+      "instrument": "ride"
+    },
+    {
+      "time": 52.767,
+      "instrument": "kick"
+    },
+    {
+      "time": 52.767,
+      "instrument": "ride"
+    },
+    {
+      "time": 53.011,
+      "instrument": "ride"
+    },
+    {
+      "time": 53.255,
+      "instrument": "snare"
+    },
+    {
+      "time": 53.255,
+      "instrument": "ride"
+    },
+    {
+      "time": 53.499,
+      "instrument": "ride"
+    },
+    {
+      "time": 53.743,
+      "instrument": "kick"
+    },
+    {
+      "time": 53.743,
+      "instrument": "ride"
+    },
+    {
+      "time": 53.986,
+      "instrument": "ride"
+    },
+    {
+      "time": 54.23,
+      "instrument": "snare"
+    },
+    {
+      "time": 54.23,
+      "instrument": "ride"
+    },
+    {
+      "time": 54.474,
+      "instrument": "ride"
+    },
+    {
+      "time": 54.474,
+      "instrument": "kick"
+    },
+    {
+      "time": 54.718,
+      "instrument": "kick"
+    },
+    {
+      "time": 54.718,
+      "instrument": "ride"
+    },
+    {
+      "time": 54.962,
+      "instrument": "ride"
+    },
+    {
+      "time": 55.206,
+      "instrument": "snare"
+    },
+    {
+      "time": 55.206,
+      "instrument": "ride"
+    },
+    {
+      "time": 55.45,
+      "instrument": "ride"
+    },
+    {
+      "time": 55.694,
+      "instrument": "kick"
+    },
+    {
+      "time": 55.694,
+      "instrument": "ride"
+    },
+    {
+      "time": 55.938,
+      "instrument": "ride"
+    },
+    {
+      "time": 56.182,
+      "instrument": "snare"
+    },
+    {
+      "time": 56.182,
+      "instrument": "ride"
+    },
+    {
+      "time": 56.425,
+      "instrument": "ride"
+    },
+    {
+      "time": 56.669,
+      "instrument": "kick"
+    },
+    {
+      "time": 56.669,
+      "instrument": "ride"
+    },
+    {
+      "time": 56.913,
+      "instrument": "ride"
+    },
+    {
+      "time": 57.157,
+      "instrument": "snare"
+    },
+    {
+      "time": 57.157,
+      "instrument": "ride"
+    },
+    {
+      "time": 57.401,
+      "instrument": "ride"
+    },
+    {
+      "time": 57.645,
+      "instrument": "kick"
+    },
+    {
+      "time": 57.645,
+      "instrument": "ride"
+    },
+    {
+      "time": 57.889,
+      "instrument": "ride"
+    },
+    {
+      "time": 58.133,
+      "instrument": "snare"
+    },
+    {
+      "time": 58.133,
+      "instrument": "ride"
+    },
+    {
+      "time": 58.377,
+      "instrument": "ride"
+    },
+    {
+      "time": 58.377,
+      "instrument": "kick"
+    },
+    {
+      "time": 58.621,
+      "instrument": "kick"
+    },
+    {
+      "time": 58.621,
+      "instrument": "ride"
+    },
+    {
+      "time": 58.864,
+      "instrument": "ride"
+    },
+    {
+      "time": 59.108,
+      "instrument": "snare"
+    },
+    {
+      "time": 59.108,
+      "instrument": "ride"
+    },
+    {
+      "time": 59.352,
+      "instrument": "ride"
+    },
+    {
+      "time": 59.596,
+      "instrument": "kick"
+    },
+    {
+      "time": 59.596,
+      "instrument": "ride"
+    },
+    {
+      "time": 59.84,
+      "instrument": "ride"
+    },
+    {
+      "time": 60.084,
+      "instrument": "snare"
+    },
+    {
+      "time": 60.084,
+      "instrument": "ride"
+    },
+    {
+      "time": 60.328,
+      "instrument": "ride"
+    },
+    {
+      "time": 60.572,
+      "instrument": "kick"
+    },
+    {
+      "time": 60.572,
+      "instrument": "ride"
+    },
+    {
+      "time": 60.816,
+      "instrument": "ride"
+    },
+    {
+      "time": 61.06,
+      "instrument": "snare"
+    },
+    {
+      "time": 61.06,
+      "instrument": "ride"
+    },
+    {
+      "time": 61.304,
+      "instrument": "ride"
+    },
+    {
+      "time": 61.547,
+      "instrument": "kick"
+    },
+    {
+      "time": 61.547,
+      "instrument": "ride"
+    },
+    {
+      "time": 61.791,
+      "instrument": "ride"
+    },
+    {
+      "time": 61.791,
+      "instrument": "tom1"
+    },
+    {
+      "time": 62.035,
+      "instrument": "snare"
+    },
+    {
+      "time": 62.035,
+      "instrument": "ride"
+    },
+    {
+      "time": 62.035,
+      "instrument": "tom2"
+    },
+    {
+      "time": 62.279,
+      "instrument": "ride"
+    },
+    {
+      "time": 62.279,
+      "instrument": "kick"
+    },
+    {
+      "time": 62.279,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 62.523,
+      "instrument": "kick"
+    },
+    {
+      "time": 62.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 62.523,
+      "instrument": "crash"
+    },
+    {
+      "time": 62.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 63.011,
+      "instrument": "snare"
+    },
+    {
+      "time": 63.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 63.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 63.499,
+      "instrument": "kick"
+    },
+    {
+      "time": 63.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 63.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 63.986,
+      "instrument": "snare"
+    },
+    {
+      "time": 63.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 64.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 64.474,
+      "instrument": "kick"
+    },
+    {
+      "time": 64.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 64.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 64.962,
+      "instrument": "snare"
+    },
+    {
+      "time": 64.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 65.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 65.45,
+      "instrument": "kick"
+    },
+    {
+      "time": 65.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 65.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 65.938,
+      "instrument": "snare"
+    },
+    {
+      "time": 65.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 66.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 66.182,
+      "instrument": "kick"
+    },
+    {
+      "time": 66.425,
+      "instrument": "kick"
+    },
+    {
+      "time": 66.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 66.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 66.913,
+      "instrument": "snare"
+    },
+    {
+      "time": 66.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 67.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 67.401,
+      "instrument": "kick"
+    },
+    {
+      "time": 67.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 67.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 67.889,
+      "instrument": "snare"
+    },
+    {
+      "time": 67.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 68.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 68.377,
+      "instrument": "kick"
+    },
+    {
+      "time": 68.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 68.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 68.864,
+      "instrument": "snare"
+    },
+    {
+      "time": 68.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 69.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 69.352,
+      "instrument": "kick"
+    },
+    {
+      "time": 69.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 69.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 69.84,
+      "instrument": "snare"
+    },
+    {
+      "time": 69.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 70.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 70.084,
+      "instrument": "kick"
+    },
+    {
+      "time": 70.328,
+      "instrument": "kick"
+    },
+    {
+      "time": 70.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 70.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 70.816,
+      "instrument": "snare"
+    },
+    {
+      "time": 70.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 71.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 71.304,
+      "instrument": "kick"
+    },
+    {
+      "time": 71.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 71.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 71.791,
+      "instrument": "snare"
+    },
+    {
+      "time": 71.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 72.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 72.279,
+      "instrument": "kick"
+    },
+    {
+      "time": 72.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 72.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 72.767,
+      "instrument": "snare"
+    },
+    {
+      "time": 72.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 73.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 73.255,
+      "instrument": "kick"
+    },
+    {
+      "time": 73.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 73.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 73.743,
+      "instrument": "snare"
+    },
+    {
+      "time": 73.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 73.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 73.986,
+      "instrument": "kick"
+    },
+    {
+      "time": 74.23,
+      "instrument": "kick"
+    },
+    {
+      "time": 74.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 74.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 74.718,
+      "instrument": "snare"
+    },
+    {
+      "time": 74.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 74.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 75.206,
+      "instrument": "kick"
+    },
+    {
+      "time": 75.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 75.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 75.694,
+      "instrument": "snare"
+    },
+    {
+      "time": 75.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 75.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 76.182,
+      "instrument": "kick"
+    },
+    {
+      "time": 76.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 76.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 76.669,
+      "instrument": "snare"
+    },
+    {
+      "time": 76.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 76.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 77.157,
+      "instrument": "kick"
+    },
+    {
+      "time": 77.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 77.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 77.401,
+      "instrument": "tom1"
+    },
+    {
+      "time": 77.645,
+      "instrument": "snare"
+    },
+    {
+      "time": 77.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 77.645,
+      "instrument": "tom2"
+    },
+    {
+      "time": 77.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 77.889,
+      "instrument": "kick"
+    },
+    {
+      "time": 77.889,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 78.133,
+      "instrument": "kick"
+    },
+    {
+      "time": 78.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 78.133,
+      "instrument": "crash"
+    },
+    {
+      "time": 78.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 78.621,
+      "instrument": "snare"
+    },
+    {
+      "time": 78.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 78.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 79.108,
+      "instrument": "kick"
+    },
+    {
+      "time": 79.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 79.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 79.596,
+      "instrument": "snare"
+    },
+    {
+      "time": 79.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 79.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 80.084,
+      "instrument": "kick"
+    },
+    {
+      "time": 80.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 80.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 80.572,
+      "instrument": "snare"
+    },
+    {
+      "time": 80.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 80.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 81.06,
+      "instrument": "kick"
+    },
+    {
+      "time": 81.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 81.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 81.547,
+      "instrument": "snare"
+    },
+    {
+      "time": 81.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 81.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 81.791,
+      "instrument": "kick"
+    },
+    {
+      "time": 82.035,
+      "instrument": "kick"
+    },
+    {
+      "time": 82.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 82.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 82.523,
+      "instrument": "snare"
+    },
+    {
+      "time": 82.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 82.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 83.011,
+      "instrument": "kick"
+    },
+    {
+      "time": 83.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 83.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 83.499,
+      "instrument": "snare"
+    },
+    {
+      "time": 83.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 83.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 83.986,
+      "instrument": "kick"
+    },
+    {
+      "time": 83.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 84.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 84.474,
+      "instrument": "snare"
+    },
+    {
+      "time": 84.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 84.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 84.962,
+      "instrument": "kick"
+    },
+    {
+      "time": 84.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 85.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 85.45,
+      "instrument": "snare"
+    },
+    {
+      "time": 85.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 85.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 85.694,
+      "instrument": "kick"
+    },
+    {
+      "time": 85.938,
+      "instrument": "kick"
+    },
+    {
+      "time": 85.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 86.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 86.425,
+      "instrument": "snare"
+    },
+    {
+      "time": 86.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 86.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 86.913,
+      "instrument": "kick"
+    },
+    {
+      "time": 86.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 87.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 87.401,
+      "instrument": "snare"
+    },
+    {
+      "time": 87.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 87.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 87.889,
+      "instrument": "kick"
+    },
+    {
+      "time": 87.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 88.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 88.377,
+      "instrument": "snare"
+    },
+    {
+      "time": 88.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 88.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 88.864,
+      "instrument": "kick"
+    },
+    {
+      "time": 88.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 89.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 89.352,
+      "instrument": "snare"
+    },
+    {
+      "time": 89.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 89.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 89.596,
+      "instrument": "kick"
+    },
+    {
+      "time": 89.84,
+      "instrument": "kick"
+    },
+    {
+      "time": 89.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 90.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 90.328,
+      "instrument": "snare"
+    },
+    {
+      "time": 90.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 90.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 90.816,
+      "instrument": "kick"
+    },
+    {
+      "time": 90.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 91.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 91.304,
+      "instrument": "snare"
+    },
+    {
+      "time": 91.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 91.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 91.791,
+      "instrument": "kick"
+    },
+    {
+      "time": 91.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 92.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 92.279,
+      "instrument": "snare"
+    },
+    {
+      "time": 92.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 92.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 92.767,
+      "instrument": "kick"
+    },
+    {
+      "time": 92.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 93.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 93.011,
+      "instrument": "tom1"
+    },
+    {
+      "time": 93.255,
+      "instrument": "snare"
+    },
+    {
+      "time": 93.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 93.255,
+      "instrument": "tom2"
+    },
+    {
+      "time": 93.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 93.499,
+      "instrument": "kick"
+    },
+    {
+      "time": 93.499,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 93.743,
+      "instrument": "kick"
+    },
+    {
+      "time": 93.743,
+      "instrument": "ride"
+    },
+    {
+      "time": 93.743,
+      "instrument": "crash"
+    },
+    {
+      "time": 93.986,
+      "instrument": "ride"
+    },
+    {
+      "time": 94.23,
+      "instrument": "snare"
+    },
+    {
+      "time": 94.23,
+      "instrument": "ride"
+    },
+    {
+      "time": 94.474,
+      "instrument": "ride"
+    },
+    {
+      "time": 94.718,
+      "instrument": "kick"
+    },
+    {
+      "time": 94.718,
+      "instrument": "ride"
+    },
+    {
+      "time": 94.962,
+      "instrument": "ride"
+    },
+    {
+      "time": 95.206,
+      "instrument": "snare"
+    },
+    {
+      "time": 95.206,
+      "instrument": "ride"
+    },
+    {
+      "time": 95.45,
+      "instrument": "ride"
+    },
+    {
+      "time": 95.694,
+      "instrument": "kick"
+    },
+    {
+      "time": 95.694,
+      "instrument": "ride"
+    },
+    {
+      "time": 95.938,
+      "instrument": "ride"
+    },
+    {
+      "time": 96.182,
+      "instrument": "snare"
+    },
+    {
+      "time": 96.182,
+      "instrument": "ride"
+    },
+    {
+      "time": 96.425,
+      "instrument": "ride"
+    },
+    {
+      "time": 96.669,
+      "instrument": "kick"
+    },
+    {
+      "time": 96.669,
+      "instrument": "ride"
+    },
+    {
+      "time": 96.913,
+      "instrument": "ride"
+    },
+    {
+      "time": 97.157,
+      "instrument": "snare"
+    },
+    {
+      "time": 97.157,
+      "instrument": "ride"
+    },
+    {
+      "time": 97.401,
+      "instrument": "ride"
+    },
+    {
+      "time": 97.401,
+      "instrument": "kick"
+    },
+    {
+      "time": 97.645,
+      "instrument": "kick"
+    },
+    {
+      "time": 97.645,
+      "instrument": "ride"
+    },
+    {
+      "time": 97.889,
+      "instrument": "ride"
+    },
+    {
+      "time": 98.133,
+      "instrument": "snare"
+    },
+    {
+      "time": 98.133,
+      "instrument": "ride"
+    },
+    {
+      "time": 98.377,
+      "instrument": "ride"
+    },
+    {
+      "time": 98.621,
+      "instrument": "kick"
+    },
+    {
+      "time": 98.621,
+      "instrument": "ride"
+    },
+    {
+      "time": 98.864,
+      "instrument": "ride"
+    },
+    {
+      "time": 99.108,
+      "instrument": "snare"
+    },
+    {
+      "time": 99.108,
+      "instrument": "ride"
+    },
+    {
+      "time": 99.352,
+      "instrument": "ride"
+    },
+    {
+      "time": 99.596,
+      "instrument": "kick"
+    },
+    {
+      "time": 99.596,
+      "instrument": "ride"
+    },
+    {
+      "time": 99.84,
+      "instrument": "ride"
+    },
+    {
+      "time": 100.084,
+      "instrument": "snare"
+    },
+    {
+      "time": 100.084,
+      "instrument": "ride"
+    },
+    {
+      "time": 100.328,
+      "instrument": "ride"
+    },
+    {
+      "time": 100.572,
+      "instrument": "kick"
+    },
+    {
+      "time": 100.572,
+      "instrument": "ride"
+    },
+    {
+      "time": 100.816,
+      "instrument": "ride"
+    },
+    {
+      "time": 101.06,
+      "instrument": "snare"
+    },
+    {
+      "time": 101.06,
+      "instrument": "ride"
+    },
+    {
+      "time": 101.304,
+      "instrument": "ride"
+    },
+    {
+      "time": 101.304,
+      "instrument": "kick"
+    },
+    {
+      "time": 101.547,
+      "instrument": "kick"
+    },
+    {
+      "time": 101.547,
+      "instrument": "ride"
+    },
+    {
+      "time": 101.791,
+      "instrument": "ride"
+    },
+    {
+      "time": 102.035,
+      "instrument": "snare"
+    },
+    {
+      "time": 102.035,
+      "instrument": "ride"
+    },
+    {
+      "time": 102.279,
+      "instrument": "ride"
+    },
+    {
+      "time": 102.523,
+      "instrument": "kick"
+    },
+    {
+      "time": 102.523,
+      "instrument": "ride"
+    },
+    {
+      "time": 102.767,
+      "instrument": "ride"
+    },
+    {
+      "time": 103.011,
+      "instrument": "snare"
+    },
+    {
+      "time": 103.011,
+      "instrument": "ride"
+    },
+    {
+      "time": 103.255,
+      "instrument": "ride"
+    },
+    {
+      "time": 103.499,
+      "instrument": "kick"
+    },
+    {
+      "time": 103.499,
+      "instrument": "ride"
+    },
+    {
+      "time": 103.743,
+      "instrument": "ride"
+    },
+    {
+      "time": 103.986,
+      "instrument": "snare"
+    },
+    {
+      "time": 103.986,
+      "instrument": "ride"
+    },
+    {
+      "time": 104.23,
+      "instrument": "ride"
+    },
+    {
+      "time": 104.474,
+      "instrument": "kick"
+    },
+    {
+      "time": 104.474,
+      "instrument": "ride"
+    },
+    {
+      "time": 104.718,
+      "instrument": "ride"
+    },
+    {
+      "time": 104.962,
+      "instrument": "snare"
+    },
+    {
+      "time": 104.962,
+      "instrument": "ride"
+    },
+    {
+      "time": 105.206,
+      "instrument": "ride"
+    },
+    {
+      "time": 105.206,
+      "instrument": "kick"
+    },
+    {
+      "time": 105.45,
+      "instrument": "kick"
+    },
+    {
+      "time": 105.45,
+      "instrument": "ride"
+    },
+    {
+      "time": 105.694,
+      "instrument": "ride"
+    },
+    {
+      "time": 105.938,
+      "instrument": "snare"
+    },
+    {
+      "time": 105.938,
+      "instrument": "ride"
+    },
+    {
+      "time": 106.182,
+      "instrument": "ride"
+    },
+    {
+      "time": 106.425,
+      "instrument": "kick"
+    },
+    {
+      "time": 106.425,
+      "instrument": "ride"
+    },
+    {
+      "time": 106.669,
+      "instrument": "ride"
+    },
+    {
+      "time": 106.913,
+      "instrument": "snare"
+    },
+    {
+      "time": 106.913,
+      "instrument": "ride"
+    },
+    {
+      "time": 107.157,
+      "instrument": "ride"
+    },
+    {
+      "time": 107.401,
+      "instrument": "kick"
+    },
+    {
+      "time": 107.401,
+      "instrument": "ride"
+    },
+    {
+      "time": 107.645,
+      "instrument": "ride"
+    },
+    {
+      "time": 107.889,
+      "instrument": "snare"
+    },
+    {
+      "time": 107.889,
+      "instrument": "ride"
+    },
+    {
+      "time": 108.133,
+      "instrument": "ride"
+    },
+    {
+      "time": 108.377,
+      "instrument": "kick"
+    },
+    {
+      "time": 108.377,
+      "instrument": "ride"
+    },
+    {
+      "time": 108.621,
+      "instrument": "ride"
+    },
+    {
+      "time": 108.621,
+      "instrument": "tom1"
+    },
+    {
+      "time": 108.864,
+      "instrument": "snare"
+    },
+    {
+      "time": 108.864,
+      "instrument": "ride"
+    },
+    {
+      "time": 108.864,
+      "instrument": "tom2"
+    },
+    {
+      "time": 109.108,
+      "instrument": "ride"
+    },
+    {
+      "time": 109.108,
+      "instrument": "kick"
+    },
+    {
+      "time": 109.108,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 109.352,
+      "instrument": "kick"
+    },
+    {
+      "time": 109.352,
+      "instrument": "ride"
+    },
+    {
+      "time": 109.352,
+      "instrument": "crash"
+    },
+    {
+      "time": 109.596,
+      "instrument": "ride"
+    },
+    {
+      "time": 109.84,
+      "instrument": "snare"
+    },
+    {
+      "time": 109.84,
+      "instrument": "ride"
+    },
+    {
+      "time": 110.084,
+      "instrument": "ride"
+    },
+    {
+      "time": 110.328,
+      "instrument": "kick"
+    },
+    {
+      "time": 110.328,
+      "instrument": "ride"
+    },
+    {
+      "time": 110.572,
+      "instrument": "ride"
+    },
+    {
+      "time": 110.816,
+      "instrument": "snare"
+    },
+    {
+      "time": 110.816,
+      "instrument": "ride"
+    },
+    {
+      "time": 111.06,
+      "instrument": "ride"
+    },
+    {
+      "time": 111.304,
+      "instrument": "kick"
+    },
+    {
+      "time": 111.304,
+      "instrument": "ride"
+    },
+    {
+      "time": 111.547,
+      "instrument": "ride"
+    },
+    {
+      "time": 111.791,
+      "instrument": "snare"
+    },
+    {
+      "time": 111.791,
+      "instrument": "ride"
+    },
+    {
+      "time": 112.035,
+      "instrument": "ride"
+    },
+    {
+      "time": 112.279,
+      "instrument": "kick"
+    },
+    {
+      "time": 112.279,
+      "instrument": "ride"
+    },
+    {
+      "time": 112.523,
+      "instrument": "ride"
+    },
+    {
+      "time": 112.767,
+      "instrument": "snare"
+    },
+    {
+      "time": 112.767,
+      "instrument": "ride"
+    },
+    {
+      "time": 113.011,
+      "instrument": "ride"
+    },
+    {
+      "time": 113.011,
+      "instrument": "kick"
+    },
+    {
+      "time": 113.255,
+      "instrument": "kick"
+    },
+    {
+      "time": 113.255,
+      "instrument": "ride"
+    },
+    {
+      "time": 113.499,
+      "instrument": "ride"
+    },
+    {
+      "time": 113.743,
+      "instrument": "snare"
+    },
+    {
+      "time": 113.743,
+      "instrument": "ride"
+    },
+    {
+      "time": 113.986,
+      "instrument": "ride"
+    },
+    {
+      "time": 114.23,
+      "instrument": "kick"
+    },
+    {
+      "time": 114.23,
+      "instrument": "ride"
+    },
+    {
+      "time": 114.474,
+      "instrument": "ride"
+    },
+    {
+      "time": 114.718,
+      "instrument": "snare"
+    },
+    {
+      "time": 114.718,
+      "instrument": "ride"
+    },
+    {
+      "time": 114.962,
+      "instrument": "ride"
+    },
+    {
+      "time": 115.206,
+      "instrument": "kick"
+    },
+    {
+      "time": 115.206,
+      "instrument": "ride"
+    },
+    {
+      "time": 115.45,
+      "instrument": "ride"
+    },
+    {
+      "time": 115.694,
+      "instrument": "snare"
+    },
+    {
+      "time": 115.694,
+      "instrument": "ride"
+    },
+    {
+      "time": 115.938,
+      "instrument": "ride"
+    },
+    {
+      "time": 116.182,
+      "instrument": "kick"
+    },
+    {
+      "time": 116.182,
+      "instrument": "ride"
+    },
+    {
+      "time": 116.425,
+      "instrument": "ride"
+    },
+    {
+      "time": 116.669,
+      "instrument": "snare"
+    },
+    {
+      "time": 116.669,
+      "instrument": "ride"
+    },
+    {
+      "time": 116.913,
+      "instrument": "ride"
+    },
+    {
+      "time": 116.913,
+      "instrument": "kick"
+    },
+    {
+      "time": 117.157,
+      "instrument": "kick"
+    },
+    {
+      "time": 117.157,
+      "instrument": "ride"
+    },
+    {
+      "time": 117.401,
+      "instrument": "ride"
+    },
+    {
+      "time": 117.645,
+      "instrument": "snare"
+    },
+    {
+      "time": 117.645,
+      "instrument": "ride"
+    },
+    {
+      "time": 117.889,
+      "instrument": "ride"
+    },
+    {
+      "time": 118.133,
+      "instrument": "kick"
+    },
+    {
+      "time": 118.133,
+      "instrument": "ride"
+    },
+    {
+      "time": 118.377,
+      "instrument": "ride"
+    },
+    {
+      "time": 118.621,
+      "instrument": "snare"
+    },
+    {
+      "time": 118.621,
+      "instrument": "ride"
+    },
+    {
+      "time": 118.864,
+      "instrument": "ride"
+    },
+    {
+      "time": 119.108,
+      "instrument": "kick"
+    },
+    {
+      "time": 119.108,
+      "instrument": "ride"
+    },
+    {
+      "time": 119.352,
+      "instrument": "ride"
+    },
+    {
+      "time": 119.596,
+      "instrument": "snare"
+    },
+    {
+      "time": 119.596,
+      "instrument": "ride"
+    },
+    {
+      "time": 119.84,
+      "instrument": "ride"
+    },
+    {
+      "time": 120.084,
+      "instrument": "kick"
+    },
+    {
+      "time": 120.084,
+      "instrument": "ride"
+    },
+    {
+      "time": 120.328,
+      "instrument": "ride"
+    },
+    {
+      "time": 120.572,
+      "instrument": "snare"
+    },
+    {
+      "time": 120.572,
+      "instrument": "ride"
+    },
+    {
+      "time": 120.816,
+      "instrument": "ride"
+    },
+    {
+      "time": 120.816,
+      "instrument": "kick"
+    },
+    {
+      "time": 121.06,
+      "instrument": "kick"
+    },
+    {
+      "time": 121.06,
+      "instrument": "ride"
+    },
+    {
+      "time": 121.304,
+      "instrument": "ride"
+    },
+    {
+      "time": 121.547,
+      "instrument": "snare"
+    },
+    {
+      "time": 121.547,
+      "instrument": "ride"
+    },
+    {
+      "time": 121.791,
+      "instrument": "ride"
+    },
+    {
+      "time": 122.035,
+      "instrument": "kick"
+    },
+    {
+      "time": 122.035,
+      "instrument": "ride"
+    },
+    {
+      "time": 122.279,
+      "instrument": "ride"
+    },
+    {
+      "time": 122.523,
+      "instrument": "snare"
+    },
+    {
+      "time": 122.523,
+      "instrument": "ride"
+    },
+    {
+      "time": 122.767,
+      "instrument": "ride"
+    },
+    {
+      "time": 123.011,
+      "instrument": "kick"
+    },
+    {
+      "time": 123.011,
+      "instrument": "ride"
+    },
+    {
+      "time": 123.255,
+      "instrument": "ride"
+    },
+    {
+      "time": 123.499,
+      "instrument": "snare"
+    },
+    {
+      "time": 123.499,
+      "instrument": "ride"
+    },
+    {
+      "time": 123.743,
+      "instrument": "ride"
+    },
+    {
+      "time": 123.986,
+      "instrument": "kick"
+    },
+    {
+      "time": 123.986,
+      "instrument": "ride"
+    },
+    {
+      "time": 124.23,
+      "instrument": "ride"
+    },
+    {
+      "time": 124.23,
+      "instrument": "tom1"
+    },
+    {
+      "time": 124.474,
+      "instrument": "snare"
+    },
+    {
+      "time": 124.474,
+      "instrument": "ride"
+    },
+    {
+      "time": 124.474,
+      "instrument": "tom2"
+    },
+    {
+      "time": 124.718,
+      "instrument": "ride"
+    },
+    {
+      "time": 124.718,
+      "instrument": "kick"
+    },
+    {
+      "time": 124.718,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 124.962,
+      "instrument": "kick"
+    },
+    {
+      "time": 124.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 124.962,
+      "instrument": "crash"
+    },
+    {
+      "time": 125.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 125.45,
+      "instrument": "snare"
+    },
+    {
+      "time": 125.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 125.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 125.938,
+      "instrument": "kick"
+    },
+    {
+      "time": 125.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 126.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 126.425,
+      "instrument": "snare"
+    },
+    {
+      "time": 126.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 126.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 126.913,
+      "instrument": "kick"
+    },
+    {
+      "time": 126.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 127.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 127.401,
+      "instrument": "snare"
+    },
+    {
+      "time": 127.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 127.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 127.889,
+      "instrument": "kick"
+    },
+    {
+      "time": 127.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 128.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 128.377,
+      "instrument": "snare"
+    },
+    {
+      "time": 128.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 128.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 128.621,
+      "instrument": "kick"
+    },
+    {
+      "time": 128.864,
+      "instrument": "kick"
+    },
+    {
+      "time": 128.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 129.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 129.352,
+      "instrument": "snare"
+    },
+    {
+      "time": 129.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 129.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 129.84,
+      "instrument": "kick"
+    },
+    {
+      "time": 129.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 130.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 130.328,
+      "instrument": "snare"
+    },
+    {
+      "time": 130.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 130.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 130.816,
+      "instrument": "kick"
+    },
+    {
+      "time": 130.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 131.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 131.304,
+      "instrument": "snare"
+    },
+    {
+      "time": 131.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 131.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 131.791,
+      "instrument": "kick"
+    },
+    {
+      "time": 131.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 132.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 132.279,
+      "instrument": "snare"
+    },
+    {
+      "time": 132.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 132.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 132.523,
+      "instrument": "kick"
+    },
+    {
+      "time": 132.767,
+      "instrument": "kick"
+    },
+    {
+      "time": 132.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 133.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 133.255,
+      "instrument": "snare"
+    },
+    {
+      "time": 133.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 133.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 133.743,
+      "instrument": "kick"
+    },
+    {
+      "time": 133.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 133.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 134.23,
+      "instrument": "snare"
+    },
+    {
+      "time": 134.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 134.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 134.718,
+      "instrument": "kick"
+    },
+    {
+      "time": 134.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 134.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 135.206,
+      "instrument": "snare"
+    },
+    {
+      "time": 135.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 135.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 135.694,
+      "instrument": "kick"
+    },
+    {
+      "time": 135.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 135.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 136.182,
+      "instrument": "snare"
+    },
+    {
+      "time": 136.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 136.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 136.425,
+      "instrument": "kick"
+    },
+    {
+      "time": 136.669,
+      "instrument": "kick"
+    },
+    {
+      "time": 136.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 136.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 137.157,
+      "instrument": "snare"
+    },
+    {
+      "time": 137.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 137.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 137.645,
+      "instrument": "kick"
+    },
+    {
+      "time": 137.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 137.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 138.133,
+      "instrument": "snare"
+    },
+    {
+      "time": 138.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 138.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 138.621,
+      "instrument": "kick"
+    },
+    {
+      "time": 138.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 138.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 139.108,
+      "instrument": "snare"
+    },
+    {
+      "time": 139.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 139.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 139.596,
+      "instrument": "kick"
+    },
+    {
+      "time": 139.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 139.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 139.84,
+      "instrument": "tom1"
+    },
+    {
+      "time": 140.084,
+      "instrument": "snare"
+    },
+    {
+      "time": 140.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 140.084,
+      "instrument": "tom2"
+    },
+    {
+      "time": 140.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 140.328,
+      "instrument": "kick"
+    },
+    {
+      "time": 140.328,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 140.572,
+      "instrument": "kick"
+    },
+    {
+      "time": 140.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 140.572,
+      "instrument": "crash"
+    },
+    {
+      "time": 140.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 141.06,
+      "instrument": "snare"
+    },
+    {
+      "time": 141.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 141.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 141.547,
+      "instrument": "kick"
+    },
+    {
+      "time": 141.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 141.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 142.035,
+      "instrument": "snare"
+    },
+    {
+      "time": 142.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 142.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 142.523,
+      "instrument": "kick"
+    },
+    {
+      "time": 142.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 142.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 143.011,
+      "instrument": "snare"
+    },
+    {
+      "time": 143.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 143.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 143.499,
+      "instrument": "kick"
+    },
+    {
+      "time": 143.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 143.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 143.986,
+      "instrument": "snare"
+    },
+    {
+      "time": 143.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 144.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 144.23,
+      "instrument": "kick"
+    },
+    {
+      "time": 144.474,
+      "instrument": "kick"
+    },
+    {
+      "time": 144.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 144.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 144.962,
+      "instrument": "snare"
+    },
+    {
+      "time": 144.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 145.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 145.45,
+      "instrument": "kick"
+    },
+    {
+      "time": 145.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 145.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 145.938,
+      "instrument": "snare"
+    },
+    {
+      "time": 145.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 146.182,
+      "instrument": "hihat"
+    },
+    {
+      "time": 146.425,
+      "instrument": "kick"
+    },
+    {
+      "time": 146.425,
+      "instrument": "hihat"
+    },
+    {
+      "time": 146.669,
+      "instrument": "hihat"
+    },
+    {
+      "time": 146.913,
+      "instrument": "snare"
+    },
+    {
+      "time": 146.913,
+      "instrument": "hihat"
+    },
+    {
+      "time": 147.157,
+      "instrument": "hihat"
+    },
+    {
+      "time": 147.401,
+      "instrument": "kick"
+    },
+    {
+      "time": 147.401,
+      "instrument": "hihat"
+    },
+    {
+      "time": 147.645,
+      "instrument": "hihat"
+    },
+    {
+      "time": 147.889,
+      "instrument": "snare"
+    },
+    {
+      "time": 147.889,
+      "instrument": "hihat"
+    },
+    {
+      "time": 148.133,
+      "instrument": "hihat"
+    },
+    {
+      "time": 148.133,
+      "instrument": "kick"
+    },
+    {
+      "time": 148.377,
+      "instrument": "kick"
+    },
+    {
+      "time": 148.377,
+      "instrument": "hihat"
+    },
+    {
+      "time": 148.621,
+      "instrument": "hihat"
+    },
+    {
+      "time": 148.864,
+      "instrument": "snare"
+    },
+    {
+      "time": 148.864,
+      "instrument": "hihat"
+    },
+    {
+      "time": 149.108,
+      "instrument": "hihat"
+    },
+    {
+      "time": 149.352,
+      "instrument": "kick"
+    },
+    {
+      "time": 149.352,
+      "instrument": "hihat"
+    },
+    {
+      "time": 149.596,
+      "instrument": "hihat"
+    },
+    {
+      "time": 149.84,
+      "instrument": "snare"
+    },
+    {
+      "time": 149.84,
+      "instrument": "hihat"
+    },
+    {
+      "time": 150.084,
+      "instrument": "hihat"
+    },
+    {
+      "time": 150.328,
+      "instrument": "kick"
+    },
+    {
+      "time": 150.328,
+      "instrument": "hihat"
+    },
+    {
+      "time": 150.572,
+      "instrument": "hihat"
+    },
+    {
+      "time": 150.816,
+      "instrument": "snare"
+    },
+    {
+      "time": 150.816,
+      "instrument": "hihat"
+    },
+    {
+      "time": 151.06,
+      "instrument": "hihat"
+    },
+    {
+      "time": 151.304,
+      "instrument": "kick"
+    },
+    {
+      "time": 151.304,
+      "instrument": "hihat"
+    },
+    {
+      "time": 151.547,
+      "instrument": "hihat"
+    },
+    {
+      "time": 151.791,
+      "instrument": "snare"
+    },
+    {
+      "time": 151.791,
+      "instrument": "hihat"
+    },
+    {
+      "time": 152.035,
+      "instrument": "hihat"
+    },
+    {
+      "time": 152.035,
+      "instrument": "kick"
+    },
+    {
+      "time": 152.279,
+      "instrument": "kick"
+    },
+    {
+      "time": 152.279,
+      "instrument": "hihat"
+    },
+    {
+      "time": 152.523,
+      "instrument": "hihat"
+    },
+    {
+      "time": 152.767,
+      "instrument": "snare"
+    },
+    {
+      "time": 152.767,
+      "instrument": "hihat"
+    },
+    {
+      "time": 153.011,
+      "instrument": "hihat"
+    },
+    {
+      "time": 153.255,
+      "instrument": "kick"
+    },
+    {
+      "time": 153.255,
+      "instrument": "hihat"
+    },
+    {
+      "time": 153.499,
+      "instrument": "hihat"
+    },
+    {
+      "time": 153.743,
+      "instrument": "snare"
+    },
+    {
+      "time": 153.743,
+      "instrument": "hihat"
+    },
+    {
+      "time": 153.986,
+      "instrument": "hihat"
+    },
+    {
+      "time": 154.23,
+      "instrument": "kick"
+    },
+    {
+      "time": 154.23,
+      "instrument": "hihat"
+    },
+    {
+      "time": 154.474,
+      "instrument": "hihat"
+    },
+    {
+      "time": 154.718,
+      "instrument": "snare"
+    },
+    {
+      "time": 154.718,
+      "instrument": "hihat"
+    },
+    {
+      "time": 154.962,
+      "instrument": "hihat"
+    },
+    {
+      "time": 155.206,
+      "instrument": "kick"
+    },
+    {
+      "time": 155.206,
+      "instrument": "hihat"
+    },
+    {
+      "time": 155.45,
+      "instrument": "hihat"
+    },
+    {
+      "time": 155.45,
+      "instrument": "tom1"
+    },
+    {
+      "time": 155.694,
+      "instrument": "snare"
+    },
+    {
+      "time": 155.694,
+      "instrument": "hihat"
+    },
+    {
+      "time": 155.694,
+      "instrument": "tom2"
+    },
+    {
+      "time": 155.938,
+      "instrument": "hihat"
+    },
+    {
+      "time": 155.938,
+      "instrument": "kick"
+    },
+    {
+      "time": 155.938,
+      "instrument": "floorTom"
+    },
+    {
+      "time": 156.182,
+      "instrument": "kick"
+    },
+    {
+      "time": 156.182,
+      "instrument": "ride"
+    },
+    {
+      "time": 156.182,
+      "instrument": "crash"
+    },
+    {
+      "time": 156.425,
+      "instrument": "ride"
+    },
+    {
+      "time": 156.669,
+      "instrument": "snare"
+    },
+    {
+      "time": 156.669,
+      "instrument": "ride"
+    },
+    {
+      "time": 156.913,
+      "instrument": "ride"
+    },
+    {
+      "time": 157.157,
+      "instrument": "kick"
+    },
+    {
+      "time": 157.157,
+      "instrument": "ride"
+    },
+    {
+      "time": 157.401,
+      "instrument": "ride"
+    },
+    {
+      "time": 157.645,
+      "instrument": "snare"
+    },
+    {
+      "time": 157.645,
+      "instrument": "ride"
+    },
+    {
+      "time": 157.889,
+      "instrument": "ride"
+    }
+  ]
+}
