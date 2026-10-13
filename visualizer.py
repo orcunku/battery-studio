@@ -20,7 +20,6 @@ def render_drum_visualizer(song_data):
     <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js" onerror="window.visualizerLibraryLoadFailure = 'Three.js';"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js" onerror="window.visualizerLibraryLoadFailure = 'Tone.js';"></script>
         <style>
             :root {{ color-scheme: dark; font-family: 'Trebuchet MS', sans-serif; }}
@@ -60,6 +59,7 @@ def render_drum_visualizer(song_data):
     <body>
         <main id="studio">
             <div id="stage">
+                <canvas id="stage-canvas" aria-label="2D drum kit visualizer"></canvas>
                 <div id="stage-status">Loading drum stage...</div>
             </div>
             <aside id="coach-cue" aria-live="polite">
@@ -91,207 +91,141 @@ def render_drum_visualizer(song_data):
             const coachEyebrow = document.getElementById('coach-eyebrow');
             const coachTitle = document.getElementById('coach-title');
             const coachCopy = document.getElementById('coach-copy');
-            if (!window.THREE || !window.Tone) {{
-                const failedLibrary = window.visualizerLibraryLoadFailure || 'Visualizer libraries';
-                status.textContent = failedLibrary + ' could not load. Check your internet connection and reload.';
-                throw new Error(failedLibrary + ' failed to load.');
+            if (!window.Tone) {{
+                status.textContent = 'Tone.js could not load. Check your internet connection and reload.';
+                throw new Error('Tone.js failed to load.');
             }}
-            const scene = new THREE.Scene();
-            scene.background = new THREE.Color('#111312');
-            scene.fog = new THREE.Fog('#111312', 12, 25);
-
-            const camera = new THREE.PerspectiveCamera(39, 16 / 9, 0.1, 60);
-            camera.position.set(0, 5.2, 9.3);
-            camera.lookAt(0, 1.25, 0);
-
-            let renderer;
-            try {{
-                renderer = new THREE.WebGLRenderer({{ antialias: true, alpha: false, powerPreference: 'low-power' }});
-            }} catch (error) {{
-                status.textContent = 'WebGL is unavailable. Enable browser hardware acceleration and reload.';
-                throw error;
+            const canvas = document.getElementById('stage-canvas');
+            const context = canvas.getContext('2d');
+            if (!context) {{
+                status.textContent = 'The 2D drum stage could not be initialized in this browser.';
+                throw new Error('Canvas 2D context is unavailable.');
             }}
-            renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
-            renderer.outputColorSpace = THREE.SRGBColorSpace;
-            renderer.toneMapping = THREE.ACESFilmicToneMapping;
-            renderer.toneMappingExposure = 1.15;
-            stage.insertBefore(renderer.domElement, status);
+            const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
             let animationFrame = null;
             let previousFrame = performance.now();
-
-            const ambient = new THREE.HemisphereLight('#dce5ec', '#27231e', 2.1);
-            scene.add(ambient);
-            const keyLight = new THREE.DirectionalLight('#f6e9ce', 3.2);
-            keyLight.position.set(-4, 8, 5);
-            scene.add(keyLight);
-            const rimLight = new THREE.DirectionalLight('#82a9a8', 1.5);
-            rimLight.position.set(4, 5, -5);
-            scene.add(rimLight);
-
-            const floor = new THREE.Mesh(
-                new THREE.PlaneGeometry(40, 40),
-                new THREE.MeshStandardMaterial({{ color: '#202321', roughness: 0.9, metalness: 0.08 }})
-            );
-            floor.rotation.x = -Math.PI / 2;
-            floor.position.y = -0.03;
-            scene.add(floor);
-
-            const rug = new THREE.Mesh(
-                new THREE.CircleGeometry(4.1, 72),
-                new THREE.MeshStandardMaterial({{ color: '#292b28', roughness: 0.98, metalness: 0.02 }})
-            );
-            rug.rotation.x = -Math.PI / 2;
-            rug.position.y = 0.005;
-            rug.scale.set(1.35, 0.82, 1);
-            scene.add(rug);
-
-            const chrome = new THREE.MeshStandardMaterial({{ color: '#89918e', metalness: 0.84, roughness: 0.28 }});
-            const darkMetal = new THREE.MeshStandardMaterial({{ color: '#343a39', metalness: 0.78, roughness: 0.34 }});
-            const shellMaterial = new THREE.MeshStandardMaterial({{ color: '#343b3b', metalness: 0.58, roughness: 0.3 }});
-            const headMaterial = new THREE.MeshStandardMaterial({{ color: '#c8c5b9', metalness: 0.12, roughness: 0.66 }});
-            const cymbalMaterial = new THREE.MeshStandardMaterial({{ color: '#b38a47', metalness: 0.82, roughness: 0.25 }});
             const partColors = {{
                 kick: '#4bc9dd', snare: '#ee667a', hihat: '#e2bc56',
                 tom1: '#71c28a', tom2: '#65aa7a', floorTom: '#72c29a',
                 crash: '#e48c4e', ride: '#d6ad58'
             }};
-            const parts = {{}};
+            const parts = {{
+                kick: {{ x: 500, y: 386, rx: 65, ry: 51, kind: 'drum', label: 'KICK', pulse: 0 }},
+                snare: {{ x: 348, y: 301, rx: 43, ry: 36, kind: 'drum', label: 'SNARE', pulse: 0 }},
+                tom1: {{ x: 440, y: 243, rx: 39, ry: 33, kind: 'drum', label: 'TOM 1', pulse: 0 }},
+                tom2: {{ x: 550, y: 235, rx: 41, ry: 34, kind: 'drum', label: 'TOM 2', pulse: 0 }},
+                floorTom: {{ x: 684, y: 306, rx: 49, ry: 41, kind: 'drum', label: 'FLOOR TOM', pulse: 0 }},
+                hihat: {{ x: 245, y: 252, rx: 57, ry: 31, kind: 'cymbal', label: 'HI-HAT', pulse: 0 }},
+                crash: {{ x: 340, y: 145, rx: 72, ry: 39, kind: 'cymbal', label: 'CRASH', pulse: 0 }},
+                ride: {{ x: 729, y: 158, rx: 79, ry: 42, kind: 'cymbal', label: 'RIDE', pulse: 0 }}
+            }};
 
-            function makePart(key, x, z) {{
-                const group = new THREE.Group();
-                group.position.set(x, 0, z);
-                scene.add(group);
-                const light = new THREE.SpotLight(partColors[key], 0, 8, Math.PI / 6, 0.68, 1.4);
-                light.position.set(x, 5.1, z);
-                light.target.position.set(x, 0.55, z);
-                scene.add(light, light.target);
-                const beam = new THREE.Mesh(
-                    new THREE.ConeGeometry(0.95, 4.1, 28, 1, true),
-                    new THREE.MeshBasicMaterial({{ color: partColors[key], transparent: true, opacity: 0, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending }})
-                );
-                beam.position.set(x, 3.4, z);
-                beam.rotation.x = Math.PI;
-                scene.add(beam);
-                const part = {{ group, light, beam, pulse: 0, meshes: [] }};
-                parts[key] = part;
-                return part;
+            function drawStage() {{
+                const width = stage.clientWidth;
+                const height = stage.clientHeight;
+                context.setTransform(pixelRatio * width / 1000, 0, 0, pixelRatio * height / 562, 0, 0);
+                context.clearRect(0, 0, 1000, 562);
+
+                const background = context.createLinearGradient(0, 0, 0, 562);
+                background.addColorStop(0, '#191d1b');
+                background.addColorStop(1, '#101211');
+                context.fillStyle = background;
+                context.fillRect(0, 0, 1000, 562);
+
+                context.fillStyle = '#202321';
+                context.beginPath();
+                context.ellipse(500, 305, 435, 245, 0, 0, Math.PI * 2);
+                context.fill();
+                context.strokeStyle = 'rgba(230, 225, 205, 0.035)';
+                context.lineWidth = 2;
+                context.stroke();
+
+                context.strokeStyle = '#59605c';
+                context.lineWidth = 5;
+                [['hihat', 'snare'], ['crash', 'tom1'], ['ride', 'floorTom']].forEach(([from, to]) => {{
+                    context.beginPath();
+                    context.moveTo(parts[from].x, parts[from].y + 14);
+                    context.lineTo(parts[to].x, parts[to].y - 12);
+                    context.stroke();
+                }});
+
+                Object.entries(parts).forEach(([key, part]) => {{
+                    const color = partColors[key];
+                    const pulse = part.pulse;
+                    context.save();
+                    context.translate(part.x, part.y);
+                    context.shadowColor = color;
+                    context.shadowBlur = 42 * pulse;
+                    context.fillStyle = `rgba(${{parseInt(color.slice(1, 3), 16)}}, ${{parseInt(color.slice(3, 5), 16)}}, ${{parseInt(color.slice(5, 7), 16)}}, ${{0.2 * pulse}})`;
+                    context.beginPath();
+                    context.ellipse(0, 0, part.rx * 1.35, part.ry * 1.45, 0, 0, Math.PI * 2);
+                    context.fill();
+                    context.shadowBlur = 0;
+
+                    if (part.kind === 'cymbal') {{
+                        const cymbal = context.createRadialGradient(-part.rx * 0.2, -part.ry * 0.4, 2, 0, 0, part.rx);
+                        cymbal.addColorStop(0, pulse ? '#f6d889' : '#d0a653');
+                        cymbal.addColorStop(1, '#74572f');
+                        context.fillStyle = cymbal;
+                        context.beginPath();
+                        context.ellipse(0, 0, part.rx, part.ry, 0, 0, Math.PI * 2);
+                        context.fill();
+                        context.strokeStyle = '#d8b86e';
+                        context.lineWidth = 2;
+                        context.stroke();
+                        context.beginPath();
+                        context.ellipse(0, 0, part.rx * 0.73, part.ry * 0.68, 0, 0, Math.PI * 2);
+                        context.strokeStyle = 'rgba(53, 42, 25, 0.55)';
+                        context.lineWidth = 1;
+                        context.stroke();
+                        context.fillStyle = '#e1c17a';
+                        context.beginPath();
+                        context.arc(0, 0, 6, 0, Math.PI * 2);
+                        context.fill();
+                    }} else {{
+                        context.fillStyle = '#343a39';
+                        context.beginPath();
+                        context.ellipse(0, 4, part.rx, part.ry, 0, 0, Math.PI * 2);
+                        context.fill();
+                        context.strokeStyle = '#89918e';
+                        context.lineWidth = 4;
+                        context.stroke();
+                        const head = context.createRadialGradient(-part.rx * 0.25, -part.ry * 0.35, 2, 0, 0, part.rx);
+                        head.addColorStop(0, pulse ? '#fff4d0' : '#d4d1c6');
+                        head.addColorStop(1, pulse ? color : '#89877f');
+                        context.fillStyle = head;
+                        context.beginPath();
+                        context.ellipse(0, 0, part.rx * 0.86, part.ry * 0.82, 0, 0, Math.PI * 2);
+                        context.fill();
+                        context.strokeStyle = 'rgba(49, 52, 48, 0.55)';
+                        context.lineWidth = 2;
+                        context.stroke();
+                    }}
+
+                    context.fillStyle = '#e6e3d8';
+                    context.font = '600 13px Trebuchet MS, sans-serif';
+                    context.textAlign = 'center';
+                    context.textBaseline = 'middle';
+                    context.shadowColor = '#111312';
+                    context.shadowBlur = 5;
+                    context.fillText(part.label, 0, part.ry + 20);
+                    context.restore();
+                }});
             }}
-
-            function addSupport(group, x, z, height, radius = 0.025) {{
-                const pole = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius * 1.3, height, 10), chrome);
-                pole.position.set(x, height / 2, z);
-                group.add(pole);
-                const feet = new THREE.Mesh(new THREE.CylinderGeometry(0.21, 0.21, 0.035, 20), darkMetal);
-                feet.position.set(x, 0.035, z);
-                group.add(feet);
-            }}
-
-            function addDrum(key, x, y, z, radius, depth, axisTowardViewer = false) {{
-                const part = makePart(key, x, z);
-                const drum = new THREE.Group();
-                drum.position.y = y;
-                if (axisTowardViewer) drum.rotation.x = Math.PI / 2;
-                part.group.add(drum);
-                const shell = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, depth, 40, 1), shellMaterial);
-                drum.add(shell);
-                const head = new THREE.Mesh(new THREE.CircleGeometry(radius * 0.91, 40), headMaterial);
-                head.position.y = depth / 2 + 0.006;
-                head.rotation.x = -Math.PI / 2;
-                drum.add(head);
-                const rim = new THREE.Mesh(new THREE.TorusGeometry(radius * 0.96, 0.035, 8, 48), chrome);
-                rim.position.y = depth / 2 + 0.025;
-                rim.rotation.x = -Math.PI / 2;
-                drum.add(rim);
-                if (axisTowardViewer) {{
-                    head.position.set(0, depth / 2 + 0.008, 0);
-                    rim.position.set(0, depth / 2 + 0.025, 0);
-                }}
-                part.meshes.push(head, rim);
-                const legs = axisTowardViewer ? 0 : 2;
-                for (let index = 0; index < legs; index++) {{
-                    const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.022, 0.032, y - 0.1, 8), chrome);
-                    leg.position.set((index ? 1 : -1) * radius * 0.6, -(y - 0.1) / 2, 0);
-                    drum.add(leg);
-                }}
-                return part;
-            }}
-
-            function addCymbal(key, x, z, y, radius) {{
-                const part = makePart(key, x, z);
-                addSupport(part.group, 0, 0, y, 0.022);
-                const plate = new THREE.Mesh(new THREE.CylinderGeometry(radius * 0.94, radius, 0.055, 48), cymbalMaterial);
-                plate.position.y = y;
-                part.group.add(plate);
-                const bell = new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.2, 0.11, 28), cymbalMaterial);
-                bell.position.y = y + 0.07;
-                part.group.add(bell);
-                part.meshes.push(plate, bell);
-                return part;
-            }}
-
-            addDrum('kick', 0, 0.78, 0.75, 0.79, 0.62, true);
-            addDrum('snare', -1.55, 1.15, 0.2, 0.48, 0.25);
-            addDrum('tom1', -0.76, 1.83, -0.15, 0.42, 0.34);
-            addDrum('tom2', 0.12, 1.92, -0.2, 0.44, 0.36);
-            addDrum('floorTom', 1.35, 1.08, -0.15, 0.56, 0.52);
-            addCymbal('hihat', -2.35, 0.25, 2.02, 0.61);
-            addCymbal('crash', -1.75, -0.5, 3.12, 0.82);
-            addCymbal('ride', 2.05, -0.55, 2.95, 0.9);
-
-            const throne = new THREE.Mesh(new THREE.CylinderGeometry(0.48, 0.52, 0.16, 32), darkMetal);
-            throne.position.set(0, 1.05, -1.42);
-            scene.add(throne);
-            const throneStem = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.075, 0.94, 12), chrome);
-            throneStem.position.set(0, 0.55, -1.42);
-            scene.add(throneStem);
-            const pedalBoard = new THREE.Mesh(new THREE.BoxGeometry(0.35, 0.08, 0.54), darkMetal);
-            pedalBoard.position.set(0, 0.09, 1.48);
-            pedalBoard.rotation.x = -0.18;
-            scene.add(pedalBoard);
-
-            function addLabel(text, x, y, z) {{
-                const labelCanvas = document.createElement('canvas');
-                labelCanvas.width = 256;
-                labelCanvas.height = 64;
-                const labelContext = labelCanvas.getContext('2d');
-                labelContext.fillStyle = 'rgba(14, 16, 15, 0.8)';
-                labelContext.beginPath();
-                labelContext.roundRect(4, 4, 248, 56, 12);
-                labelContext.fill();
-                labelContext.fillStyle = '#e6e3d8';
-                labelContext.font = '600 27px Trebuchet MS, sans-serif';
-                labelContext.textAlign = 'center';
-                labelContext.textBaseline = 'middle';
-                labelContext.fillText(text, 128, 32);
-                const texture = new THREE.CanvasTexture(labelCanvas);
-                texture.colorSpace = THREE.SRGBColorSpace;
-                const sprite = new THREE.Sprite(new THREE.SpriteMaterial({{ map: texture, transparent: true, depthTest: false }}));
-                sprite.position.set(x, y, z);
-                sprite.scale.set(0.85, 0.22, 1);
-                scene.add(sprite);
-            }}
-            addLabel('KICK', 0, 0.35, 1.65);
-            addLabel('SNARE', -1.55, 1.9, 0.3);
-            addLabel('TOM 1', -0.76, 2.43, -0.15);
-            addLabel('TOM 2', 0.12, 2.55, -0.2);
-            addLabel('FLOOR TOM', 1.35, 1.75, -0.15);
-            addLabel('HI-HAT', -2.35, 2.55, 0.25);
-            addLabel('CRASH', -1.75, 3.65, -0.5);
-            addLabel('RIDE', 2.05, 3.5, -0.55);
 
             function resizeStage() {{
                 const width = Math.max(stage.clientWidth, 1);
                 const height = Math.max(stage.clientHeight, 1);
-                renderer.setSize(width, height, false);
-                camera.aspect = width / height;
-                camera.position.x = width < 560 ? 0 : -0.15;
-                camera.position.z = width < 560 ? 10.8 : 9.3;
-                camera.lookAt(0, 1.25, 0);
-                camera.updateProjectionMatrix();
-                requestStageFrame();
+                canvas.width = Math.round(width * pixelRatio);
+                canvas.height = Math.round(height * pixelRatio);
+                drawStage();
             }}
             new ResizeObserver(resizeStage).observe(stage);
             resizeStage();
+
+            function requestStageFrame() {{
+                if (animationFrame === null) animationFrame = requestAnimationFrame(animate);
+            }}
 
             const kickSynth = new Tone.MembraneSynth({{ pitchDecay: 0.05, octaves: 8, oscillator: {{ type: 'sine' }} }}).toDestination();
             const snareSynth = new Tone.NoiseSynth({{ noise: {{ type: 'white' }}, envelope: {{ attack: 0.001, decay: 0.2, sustain: 0 }} }}).toDestination();
@@ -512,14 +446,8 @@ def render_drum_visualizer(song_data):
 
                 Object.values(parts).forEach(part => {{
                     part.pulse = Math.max(0, part.pulse - delta * 2.7);
-                    part.light.intensity = part.pulse * 34;
-                    part.beam.material.opacity = part.pulse * 0.16;
-                    part.meshes.forEach(mesh => {{
-                        mesh.material.emissive.set(part.pulse > 0 ? part.light.color : '#000000');
-                        mesh.material.emissiveIntensity = part.pulse * 0.72;
-                    }});
                 }});
-                renderer.render(scene, camera);
+                drawStage();
                 if (Tone.Transport.state === 'started' || Object.values(parts).some(part => part.pulse > 0.01)) {{
                     requestStageFrame();
                 }}
