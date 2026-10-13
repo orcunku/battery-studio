@@ -20,8 +20,8 @@ def render_drum_visualizer(song_data):
     <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js" onerror="window.visualizerLibraryLoadFailure = 'Three.js';"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js" onerror="window.visualizerLibraryLoadFailure = 'Tone.js';"></script>
         <style>
             :root {{ color-scheme: dark; font-family: 'Trebuchet MS', sans-serif; }}
             * {{ box-sizing: border-box; }}
@@ -30,6 +30,10 @@ def render_drum_visualizer(song_data):
             #stage {{ position: relative; width: 100%; aspect-ratio: 16 / 9; min-height: 340px; max-height: 660px; overflow: hidden; background: #111312; }}
             #stage canvas {{ display: block; width: 100%; height: 100%; }}
             #stage-status {{ position: absolute; inset: 0; display: grid; place-items: center; color: #d5d2c7; font-size: 14px; pointer-events: none; }}
+            #coach-cue {{ display: grid; grid-template-columns: 1fr; gap: 4px; margin: 10px 4px 0; padding: 11px 14px; border-left: 3px solid #d5a53a; background: #20231f; color: #f1f0e9; }}
+            #coach-eyebrow {{ display: block; color: #e6bd60; font-size: 10px; font-weight: 700; }}
+            #coach-title {{ display: block; font-size: 14px; }}
+            #coach-copy {{ margin: 0; color: #d2d0c7; font-size: 12px; line-height: 1.4; }}
             #controls {{ display: grid; grid-template-columns: auto auto minmax(90px, 1fr) auto; align-items: center; gap: 12px; padding: 12px 4px 6px; }}
             button {{ border: 1px solid #55594f; border-radius: 4px; color: #f2efe4; background: #282b27; padding: 9px 14px; min-height: 38px; font: 600 13px 'Trebuchet MS', sans-serif; cursor: pointer; }}
             button:hover:not(:disabled) {{ border-color: #d1a448; background: #34372f; }}
@@ -48,12 +52,21 @@ def render_drum_visualizer(song_data):
                 #time-display {{ grid-column: 3; grid-row: 2; }}
                 button {{ padding: 8px 10px; font-size: 12px; }}
                 #legend {{ gap: 9px 12px; }}
+                #coach-cue {{ margin: 8px 2px 0; padding: 9px 11px; }}
+                #coach-copy {{ font-size: 11px; }}
             }}
         </style>
     </head>
     <body>
         <main id="studio">
-            <div id="stage"><div id="stage-status">Loading drum stage...</div></div>
+            <div id="stage">
+                <div id="stage-status">Loading drum stage...</div>
+            </div>
+            <aside id="coach-cue" aria-live="polite">
+                <span id="coach-eyebrow">LIVE COACH</span>
+                <strong id="coach-title">Ready when you are</strong>
+                <p id="coach-copy">The coach will preview challenging fills and busy phrases.</p>
+            </aside>
             <div id="controls">
                 <button id="playBtn" disabled>Play Track</button>
                 <button id="stopBtn">Stop</button>
@@ -75,6 +88,14 @@ def render_drum_visualizer(song_data):
             const playButton = document.getElementById('playBtn');
             const scrubber = document.getElementById('timeScrubber');
             const timeDisplay = document.getElementById('time-display');
+            const coachEyebrow = document.getElementById('coach-eyebrow');
+            const coachTitle = document.getElementById('coach-title');
+            const coachCopy = document.getElementById('coach-copy');
+            if (!window.THREE || !window.Tone) {{
+                const failedLibrary = window.visualizerLibraryLoadFailure || 'Visualizer libraries';
+                status.textContent = failedLibrary + ' could not load. Check your internet connection and reload.';
+                throw new Error(failedLibrary + ' failed to load.');
+            }}
             const scene = new THREE.Scene();
             scene.background = new THREE.Color('#111312');
             scene.fog = new THREE.Fog('#111312', 12, 25);
@@ -83,12 +104,20 @@ def render_drum_visualizer(song_data):
             camera.position.set(0, 5.2, 9.3);
             camera.lookAt(0, 1.25, 0);
 
-            const renderer = new THREE.WebGLRenderer({{ antialias: true, alpha: false }});
-            renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+            let renderer;
+            try {{
+                renderer = new THREE.WebGLRenderer({{ antialias: true, alpha: false, powerPreference: 'low-power' }});
+            }} catch (error) {{
+                status.textContent = 'WebGL is unavailable. Enable browser hardware acceleration and reload.';
+                throw error;
+            }}
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
             renderer.outputColorSpace = THREE.SRGBColorSpace;
             renderer.toneMapping = THREE.ACESFilmicToneMapping;
             renderer.toneMappingExposure = 1.15;
             stage.insertBefore(renderer.domElement, status);
+            let animationFrame = null;
+            let previousFrame = performance.now();
 
             const ambient = new THREE.HemisphereLight('#dce5ec', '#27231e', 2.1);
             scene.add(ambient);
@@ -171,7 +200,7 @@ def render_drum_visualizer(song_data):
                 drum.add(head);
                 const rim = new THREE.Mesh(new THREE.TorusGeometry(radius * 0.96, 0.035, 8, 48), chrome);
                 rim.position.y = depth / 2 + 0.025;
-                    rim.rotation.x = -Math.PI / 2;
+                rim.rotation.x = -Math.PI / 2;
                 drum.add(rim);
                 if (axisTowardViewer) {{
                     head.position.set(0, depth / 2 + 0.008, 0);
@@ -189,7 +218,7 @@ def render_drum_visualizer(song_data):
 
             function addCymbal(key, x, z, y, radius) {{
                 const part = makePart(key, x, z);
-                    addSupport(part.group, 0, 0, y, 0.022);
+                addSupport(part.group, 0, 0, y, 0.022);
                 const plate = new THREE.Mesh(new THREE.CylinderGeometry(radius * 0.94, radius, 0.055, 48), cymbalMaterial);
                 plate.position.y = y;
                 part.group.add(plate);
@@ -259,6 +288,7 @@ def render_drum_visualizer(song_data):
                 camera.position.z = width < 560 ? 10.8 : 9.3;
                 camera.lookAt(0, 1.25, 0);
                 camera.updateProjectionMatrix();
+                requestStageFrame();
             }}
             new ResizeObserver(resizeStage).observe(stage);
             resizeStage();
@@ -275,7 +305,9 @@ def render_drum_visualizer(song_data):
             let notes = [];
             let isSeeking = false;
             let atEnd = false;
-            let previousFrame = performance.now();
+            let coachPlan = [];
+            let coachBarLength = 240 / Number(songData.bpm || 120);
+            let activeCoachKey = '';
 
             function formatTime(seconds) {{
                 const safeSeconds = Math.max(0, Number(seconds) || 0);
@@ -324,6 +356,77 @@ def render_drum_visualizer(song_data):
                 return arrangement.sort((left, right) => left.time - right.time);
             }}
 
+            function buildCoachPlan(trackDuration) {{
+                const barsPerSection = 4;
+                const sectionLength = coachBarLength * barsPerSection;
+                const sectionCount = Math.ceil(trackDuration / sectionLength);
+                const sections = Array.from({{ length: sectionCount }}, (_, index) => ({{
+                    index,
+                    start: index * sectionLength,
+                    end: Math.min((index + 1) * sectionLength, trackDuration),
+                    hits: 0,
+                    fills: 0,
+                    instruments: new Set()
+                }}));
+
+                notes.forEach(note => {{
+                    const sectionIndex = Math.floor(note.time / sectionLength);
+                    const section = sections[sectionIndex];
+                    if (!section) return;
+                    section.hits++;
+                    section.instruments.add(note.instrument);
+                    if (['tom1', 'tom2', 'floorTom'].includes(note.instrument)) section.fills++;
+                }});
+
+                const populatedSections = sections.map(section => section.hits).filter(Boolean).sort((left, right) => left - right);
+                const medianHits = populatedSections[Math.floor(populatedSections.length / 2)] || 1;
+                return sections.map(section => ({{
+                    ...section,
+                    hard: section.fills > 0 || section.hits >= medianHits * 1.3
+                }}));
+            }}
+
+            function updateCoachCue(currentTime) {{
+                const nextHardSection = coachPlan.find(section => section.hard && section.end > currentTime);
+                if (!nextHardSection) {{
+                    const key = 'steady';
+                    if (activeCoachKey !== key) {{
+                        activeCoachKey = key;
+                        coachEyebrow.textContent = 'LIVE COACH';
+                        coachTitle.textContent = 'Groove locked';
+                        coachCopy.textContent = 'Keep an even pulse and stay relaxed between accents.';
+                    }}
+                    return;
+                }}
+
+                const isActive = currentTime >= nextHardSection.start;
+                const barsUntilStart = Math.ceil((nextHardSection.start - currentTime) / coachBarLength);
+                let eyebrow;
+                let title;
+                let guidance;
+                if (!isActive && barsUntilStart > 2) {{
+                    eyebrow = 'SECTION AHEAD';
+                    title = 'A challenging phrase is coming';
+                    guidance = 'Keep the backbeat steady; the coach will cue your entrance.';
+                }} else if (nextHardSection.fills > 0) {{
+                    eyebrow = isActive ? 'TOM FILL • BAR ' + (Math.floor((currentTime - nextHardSection.start) / coachBarLength) + 1) : 'FILL IN ' + barsUntilStart + ' BARS';
+                    title = isActive ? 'Move across the toms' : 'Tom fill approaching';
+                    guidance = isActive ? 'Hold the pulse under the fill; land the next downbeat with the kick.' : 'Keep the groove steady, then follow the toms on the final bar.';
+                }} else {{
+                    eyebrow = isActive ? 'BUSY PHRASE' : 'BUSY PHRASE IN ' + barsUntilStart + ' BARS';
+                    title = 'Count the subdivisions';
+                    guidance = 'Keep your kick and snare even; let the cymbal pattern stay relaxed.';
+                }}
+
+                const key = [eyebrow, title, guidance].join('|');
+                if (activeCoachKey !== key) {{
+                    activeCoachKey = key;
+                    coachEyebrow.textContent = eyebrow;
+                    coachTitle.textContent = title;
+                    coachCopy.textContent = guidance;
+                }}
+            }}
+
             function playDrumSound(instrument, time) {{
                 if (instrument === 'kick') kickSynth.triggerAttackRelease('C1', '8n', time);
                 else if (instrument === 'snare') snareSynth.triggerAttackRelease('16n', time);
@@ -345,6 +448,8 @@ def render_drum_visualizer(song_data):
                 Tone.Transport.cancel(0);
                 notes = buildArrangement(duration);
                 notes.forEach(note => Tone.Transport.schedule(time => triggerHit(note.instrument, time), note.time));
+                coachPlan = buildCoachPlan(duration);
+                updateCoachCue(Tone.Transport.seconds);
             }}
 
             function setupPlayer() {{
@@ -377,12 +482,22 @@ def render_drum_visualizer(song_data):
             }}
             setupPlayer();
 
+            function requestStageFrame() {{
+                if (animationFrame === null) animationFrame = requestAnimationFrame(animate);
+            }}
+
             function animate(now) {{
-                requestAnimationFrame(animate);
+                animationFrame = null;
+                const isPlaying = Tone.Transport.state === 'started';
+                const hasPulse = Object.values(parts).some(part => part.pulse > 0.01);
+                if ((isPlaying || hasPulse) && now - previousFrame < 1000 / 30) {{
+                    requestStageFrame();
+                    return;
+                }}
                 const delta = Math.min((now - previousFrame) / 1000, 0.05);
                 previousFrame = now;
                 let currentTime = Tone.Transport.seconds;
-                if (Tone.Transport.state === 'started' && !isSeeking) {{
+                if (isPlaying && !isSeeking) {{
                     scrubber.value = currentTime;
                     if (duration > 0 && currentTime >= duration) {{
                         Tone.Transport.stop();
@@ -393,6 +508,7 @@ def render_drum_visualizer(song_data):
                     }}
                 }}
                 timeDisplay.textContent = formatTime(atEnd ? duration : currentTime) + ' / ' + formatTime(duration);
+                updateCoachCue(currentTime);
 
                 Object.values(parts).forEach(part => {{
                     part.pulse = Math.max(0, part.pulse - delta * 2.7);
@@ -404,8 +520,11 @@ def render_drum_visualizer(song_data):
                     }});
                 }});
                 renderer.render(scene, camera);
+                if (Tone.Transport.state === 'started' || Object.values(parts).some(part => part.pulse > 0.01)) {{
+                    requestStageFrame();
+                }}
             }}
-            requestAnimationFrame(animate);
+            requestStageFrame();
 
             scrubber.onpointerdown = () => {{ isSeeking = true; }};
             scrubber.onpointerup = () => {{ isSeeking = false; }};
@@ -414,6 +533,8 @@ def render_drum_visualizer(song_data):
                 Tone.Transport.seconds = seekTime;
                 atEnd = false;
                 timeDisplay.textContent = formatTime(seekTime) + ' / ' + formatTime(duration);
+                updateCoachCue(seekTime);
+                requestStageFrame();
             }};
 
             playButton.onclick = async () => {{
@@ -429,6 +550,7 @@ def render_drum_visualizer(song_data):
                     Tone.Transport.start();
                     playButton.textContent = 'Pause';
                 }}
+                requestStageFrame();
             }};
 
             document.getElementById('stopBtn').onclick = () => {{
@@ -437,6 +559,7 @@ def render_drum_visualizer(song_data):
                 atEnd = false;
                 scrubber.value = 0;
                 playButton.textContent = 'Play Track';
+                requestStageFrame();
             }};
         </script>
     </body>
